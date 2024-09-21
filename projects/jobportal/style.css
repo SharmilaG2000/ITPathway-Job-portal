@@ -1,0 +1,661 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+/* Global CSS */
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 60px;
+}
+h3 {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+
+.sec-space {
+  padding: 4rem 0;
+}
+.extra-space {
+  padding-top: 8rem;
+}
+.obj-width {
+  max-width: 1200px;
+  margin: auto;
+}
+
+#w-btn{
+  margin-left: 40px;
+  background-color: #fff;
+  color: #1f4a40;
+  padding: 9px 30px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  box-shadow: none;
+  border: none;
+}
+
+#g-btn{
+  
+  text-decoration: none;
+  background-color: #51a995;
+  color: #fff;
+  padding: 9px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#submit-btn{
+  display: block; /* Ensures the button is on a new line */
+  width: 30%; /* Optional: match input width */
+  margin: 10px 0;
+  margin-left: 6rem; /* Adjust spacing */
+  text-align: center;
+  text-decoration: none;
+  background-color: #51a995;
+  color: #fff;
+  padding: 9px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none; /* Remove the default button border */
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+
+/* Navbar */
+
+header{
+  background-color: #1f4a40;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+
+}
+
+#menu li a{
+  color: #fff;
+  text-decoration: none;
+  margin-left: 40px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+#menu{
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+  list-style: none;
+}
+#navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+#navbar .logo{
+  width: 80px;
+}
+
+#bar{
+  color: #fff;
+  display: none;
+}
+
+/* Hero */
+.hero{
+  background-color: #1f4a40;
+}
+
+.hero-box{
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  align-items: center;
+}
+
+.h-left p{
+  padding: 1.5rem 0;
+}
+
+.search{
+  position: relative;
+}
+.search a{
+  position: absolute;
+  top: 12px;
+  right: 20px;
+
+}
+
+.search input{
+  width: 100%;
+  height: 4rem;
+  border-radius: 35px;
+  padding: 0 20px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+}
+
+.h-right{
+  width: 50%;
+}
+
+.h-right img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.h-left{
+  width: 45%;
+  color: #fff;
+}
+
+/* Features */
+.features .fe-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.features .fe-box img{
+   width: 50px;
+   margin-top: 3rem;
+}
+
+.features .fe-box div{
+  width: 200px;
+
+}
+
+/* Jobs */
+.jobs .job-id{
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  box-shadow: 2px 2px 15px rgb(0, 0,0, 0.1);
+
+}
+
+.jobs .job-id li{
+  padding: 20px 40px ;
+  cursor: pointer;
+  color: #000;
+}
+
+.jobs .job-id li.active{
+ background-color: #51a995;
+ color: #fff;
+}
+
+.jobs .jList{
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid #CCC;
+  align-items: center;
+  justify-items: start;
+  cursor: pointer;
+  color: #000;
+  padding: 2rem 2rem;
+}
+.jobs .jList.delete{
+  display: none;
+}
+.jobs .jList:hover {
+ background: #ecf1ee;;
+}
+
+.jobs .jList img{
+  width: 40px;
+}
+
+.jobs .jList h3{
+padding-bottom: 0;
+}
+
+/* Job description */
+.JD{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+/* Brand Section  */
+.trust .t-box{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.trust .t-box img{
+ margin: 1rem 1rem 1rem 0;
+
+}
+
+/* Footer */
+
+.footer{
+  background-color: #1f4a40;
+  color: #fff;
+  padding: 4rem 0;
+
+}
+
+.top{
+  display: flex;
+  align-items: center;
+  text-align: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.top .logo{
+  width: 170px;
+  margin-bottom: 1rem;
+}
+
+.top i{
+  color: #fff;
+  font-size: 2rem;
+  margin-left: 0.5rem;
+}
+
+.bottom{
+  padding-top: 2rem;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bottom div{
+display: flex;
+flex-direction: column;
+}
+
+.bottom a{
+  text-decoration: none;
+  color: #fff;
+  line-height: 35px;
+  font-size: 1.1rem;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-container input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('images/search-alt-2-regular-24.png');
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+/* Browse Jobs */
+
+.jobs form{
+  margin-top: 3rem;
+  width: 100%;
+  border: 1px solid #51a995;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.jobs form i {
+  padding-left: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+
+}
+
+.jobs form input{
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1rem 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* Job Descrpiton */
+.job-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8fcfa;
+  border: 1px solid #51a995;
+  border-radius: 38px;
+  padding: 2rem;
+}
+
+.job-img-row{
+  display: flex;
+  align-items: center;
+}
+
+.job-header img{
+  width: 100px;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 15px;
+  margin-right: 2rem;
+}
+
+.job-desc p{
+  padding-bottom: 2rem;
+}
+
+/* JOb Description */
+
+
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Aligns the image and form to the top */
+  padding: 20px;
+  flex-wrap: wrap; /* Makes it responsive, allowing the form to go below on smaller screens */
+}
+
+.img-left {
+  flex: 1; /* Takes 50% of the space */
+  max-width: 45%; /* Limits the width to 45% */
+}
+
+.img-left h2 p{
+  margin-left: 6rem ;
+}
+
+.img-left img {
+  max-width: 100%; /* Ensures the image is responsive */
+  height: auto;
+}
+
+.form-right {
+  flex: 1;
+  max-width: 50%;
+  padding-left: 20px;
+  margin-top: 5rem;
+}
+
+.form-right label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-right input, 
+.form-right textarea {
+  width: 70%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error-message {
+  color: red !important;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Login/Register form container */
+.login-register {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.login-container,
+.register-container {
+  flex: 1;
+  max-width: 45%;
+}
+
+.login-container h2,
+.register-container h2 {
+  text-align: center;
+}
+
+.login-container form,
+.register-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container label,
+.register-container label {
+  margin-bottom: 5px;
+}
+
+.login-container input,
+.register-container input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-container button,
+.register-container button {
+  padding: 10px;
+  background-color: #51a995;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.login-container button:hover,
+.register-container button:hover {
+  background-color: #47a085;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .login-register {
+    flex-direction: column;
+  }
+
+  .login-container,
+  .register-container {
+    max-width: 100%;
+  }
+}
+
+
+
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .form-container {
+    flex-direction: column; /* Stack the image and form vertically */
+  }
+
+  .img-left, .form-right {
+    max-width: 100%; /* Make both sections full-width */
+    padding-left: 0;
+  }
+}
+
+
+@media (max-width: 1200px){
+  .obj-width {
+    width: 95%;
+  }
+}
+
+@media (max-width: 699px) {
+  #menu {
+    background-color: #fff;
+    display: block;
+    width: 280px;
+    height: auto;
+    position: absolute;
+    top: 80px;
+    right: -100%;
+    padding: 30px 0px;
+    box-shadow: 0px 2px 10px rgb(0, 0,0, 0.2);
+    border-radius: 13px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    
+}
+
+#menu.active{
+  right: 10px;
+  opacity: 1;
+}
+
+#menu li{
+  padding: 1rem;
+}
+
+#menu li a{
+  color: #1f4a40;
+  
+}
+
+#bar {
+  color: #fff;
+  display: block;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+#w-btn {
+  margin: 20px 0 0 50px;
+  background-color: #1f4a40;
+  color: #fff;
+  
+}
+}
+
+@media (max-width: 699px){
+
+  .hero-box {
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: auto;
+    align-items: start;
+    padding: 8rem 0;
+}
+
+.h-left{
+  width: 100%;
+}
+
+.h-right{
+ display: none;
+}
+
+.features .fe-box div{
+  width: 40%;
+}
+
+.jobs .job-id{
+  position: relative;
+  width: 100%;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+
+}
+
+.jobs .job-id li{
+  padding: 20px 30px ;
+  text-wrap: nowrap;
+}
+
+.jobs-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.jobs .jList{
+  width: 48%;
+  margin-top: 1rem;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 15px;
+  padding: 2rem 1rem ;
+  text-align: center;
+  justify-items: center;
+  
+}
+
+/* footer */
+
+.bottom div{
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+.top i{
+  margin: 1rem 1rem 0 0;
+}
+
+/* Job Detail */
+.job-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items:flex-start;
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.job-img-row{
+ margin-bottom: 1.5rem;
+}
+
+.job-header img{
+  padding: 0rem;
+  border-radius: 10px;
+}
+
+}
+
+
